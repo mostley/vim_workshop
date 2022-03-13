@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const filenames = ["why", "x"];
+const filenames = ["why", "x", "insert", "repetition", "jump", "textobjexts", "repeat"];
 const usernamesData = fs.readFileSync("./src/usernames", {
   encoding: "utf8",
   flag: "r",
