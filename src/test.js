@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const filenames = ["why", "x", "insert", "repetition", "jump", "textobjexts", "repeat"];
+const filenames = ["why", "x", "insert", "repetition", "jump", "textobjects", "repeat"];
 const usernamesData = fs.readFileSync("./src/usernames", {
   encoding: "utf8",
   flag: "r",
@@ -12,7 +12,7 @@ describe("Exercises", () => {
 
   beforeAll(() => {
     for (const filename of filenames) {
-      const solutionData = fs.readFileSync(`./src/solutions/${filename}_solved.txt`, {
+      const solutionData = fs.readFileSync(`${__dirname}/solutions/${filename}_solved.txt`, {
         encoding: "utf8",
         flag: "r",
       });
