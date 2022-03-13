@@ -1,8 +1,11 @@
 const fs = require("fs");
 
+const usernames = ["username1", "username2"];
+const filenames = ["x.txt"];
+
 describe("Exercises", () => {
-  describe.each([["username1"], ["username2"]])("%s", (username) => {
-    it.each([["x.txt"]])("%s", (filename) => {
+  describe.each(usernames)("%s", (username) => {
+    it.each(filenames)("%s", (filename) => {
       const data = fs.readFileSync(`./src/${username}/${filename}`, {
         encoding: "utf8",
         flag: "r",
