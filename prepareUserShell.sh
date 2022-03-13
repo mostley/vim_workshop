@@ -8,6 +8,9 @@ then
     exit 1
 fi
 
+cd /home/vim_workshop/
+./createUser.sh $1
+
 USER_HOME=/home/$1
 USER_DIR=/home/vim_workshop/src/users/$1
 
@@ -19,5 +22,3 @@ cp /root/.vimrc $USER_HOME/.
 chown -R $1:$1 $USER_HOME
 chown -R $1:$1 $USER_DIR
 usermod -a -G workshop sven
-cd /home/vim_workshop/
-./createUser.sh $1

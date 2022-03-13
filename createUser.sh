@@ -15,5 +15,3 @@ if grep -q "$1" ./src/usernames; then
 else
   echo "$1" >> ./src/usernames
 fi
-
-useradd -s /bin/zsh -p fablab $1
