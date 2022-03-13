@@ -1,18 +1,20 @@
 {
-  bacon
+  insert some bacon here
 }
 
 
-  {bacon}
+  {some chunky chunky bacon please}
 
 
 
-{bacon}
+{some more here as well would be great!}
 
 
 
 {
-  bacon
+  all this needs to go, there's no space for this
+  please replace with bacon.
+  no worries it will make everything better
 }
 
 
@@ -24,5 +26,5 @@ this can stay
 
 
 
-some {bacon} would be nice about {bacon}
+some {brocolli} would be nice right about {now}
 
