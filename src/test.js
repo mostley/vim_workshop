@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 const filenames = ["why", "x", "insert", "repetition", "jump", "textobjects", "repeat"];
-const usernamesData = fs.readFileSync("./src/usernames", {
+const usernamesData = fs.readFileSync(`${__dirname}/usernames`, {
   encoding: "utf8",
   flag: "r",
 });
@@ -22,7 +22,7 @@ describe("Exercises", () => {
 
   describe.each(usernames)("%s", (username) => {
     it.each(filenames)("%s.txt", (filename) => {
-      const userExerciseData = fs.readFileSync(`./src/users/${username}/${filename}.txt`, {
+      const userExerciseData = fs.readFileSync(`${__dirname}/users/${username}/${filename}.txt`, {
         encoding: "utf8",
         flag: "r",
       });
