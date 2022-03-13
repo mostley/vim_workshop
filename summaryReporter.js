@@ -8,10 +8,13 @@ function printAncestorResults(name, ancestorResults, depth = 0) {
     console.log(indent + chalk.bold(name));
   }
 
+  let resultText = indent + indentation;
   for (const result of ancestorResults.results ?? []) {
     // console.log(`${indent}${indentation}${result.title} - ${result.status}`);
-    console.log(`${indent}${indentation}${result.title}`);
+    // console.log(`${indent}${indentation}${result.title}`);
+    resultText += result.title + indentation;
   }
+  console.log(resultText);
 
   for (const key of Object.keys(ancestorResults)) {
     if (key === "results") {
