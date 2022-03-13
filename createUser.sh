@@ -11,7 +11,7 @@ fi
 mkdir -p ./src/users/$1
 cp ./src/exercises/*.txt ./src/users/$1/.
 if grep -q "$1" ./src/usernames; then
-  echo "user already in list"
+  echo "$1 already in list"
 else
   echo "$1" >> ./src/usernames
 fi
