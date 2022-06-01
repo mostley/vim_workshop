@@ -5,6 +5,8 @@ Some scripts and exercises for a ssh based VIM course. It contains a custom watc
 ## usage
 
 * Ensure your server has a group named workshop with restricted rights but which users are allowed to log in via SSH.
+  * groupadd workshop
+  * edit ssh config
 * Add the vimrc to the system
 * install zsh via oh-my-zsh
 * install vim
@@ -23,3 +25,7 @@ Some scripts and exercises for a ssh based VIM course. It contains a custom watc
 ## slides (german)
 
 https://docs.google.com/presentation/d/13b-LezA079TYB3S6FyFSaStkyjxrF-gk6YjV66XAyfA/edit
+
+## slides (english)
+
+https://docs.google.com/presentation/d/1ZuF5szCk1LzxvMz15l-CgiT2c5JoNDkLaJkLHFA7Pbg/edit?usp=sharing
