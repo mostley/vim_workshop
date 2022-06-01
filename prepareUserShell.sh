@@ -24,6 +24,6 @@ do
         chown -R $USERNAME:$USERNAME $USER_HOME
         chown -R $USERNAME:$USERNAME $USER_DIR
         usermod -a -G workshop sven
-        usermod --password $(echo fablab | openssl passwd -1 -stdin) $USERNAME
+        usermod --password $(echo workshop | openssl passwd -1 -stdin) $USERNAME
 done
 
