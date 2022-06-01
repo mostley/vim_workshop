@@ -1,1 +1,1 @@
-useradd -s /bin/zsh -p fablab $1
+useradd -s /bin/zsh -p workshop $1
