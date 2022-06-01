@@ -4,12 +4,6 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-call plug#begin('~/.vim/plugged')
-
-Plug 'ThePrimeagen/vim-be-good'
-
-call plug#end()
-
 syntax on
 
 set noerrorbells
